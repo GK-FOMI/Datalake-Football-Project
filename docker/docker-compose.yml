@@ -16,7 +16,7 @@ x-airflow-common:
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
     # ----------------------------------------------------------------------------------------------------------------------
     ### AJOUT POUR PROJET FOOTBALL: Installation des librairies d'ingestion (API et Scraping) et Elastic
-    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-pandas requests beautifulsoup4 elasticsearch==7.17.10}
+    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-pandas requests beautifulsoup4 elasticsearch==7.17.9}
     # ----------------------------------------------------------------------------------------------------------------------
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
@@ -114,7 +114,7 @@ services:
     <<: *airflow-common
     command: webserver
     ports:
-      - "8080:8080"
+      - "8085:8080"
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
       interval: 30s
