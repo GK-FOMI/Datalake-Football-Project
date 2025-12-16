@@ -2,9 +2,11 @@ version: '3.7'
 
 x-airflow-common:
   &airflow-common
-  image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.9.2}
+  #image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.9.2}
+  build: .
   environment:
     &airflow-common-env
+    AVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64 # On s'assure que Spark trouve Java
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
@@ -14,19 +16,18 @@ x-airflow-common:
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false' # Changé de 'true' à 'false' pour la propreté
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
-    # ----------------------------------------------------------------------------------------------------------------------
-    ### AJOUT POUR PROJET FOOTBALL: Installation des librairies d'ingestion (API et Scraping) et Elastic
-    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-pandas requests beautifulsoup4 elasticsearch==7.17.9}
+    # AJOUTEZ pyspark DANS LES REQUIREMENTS SI CE N'EST PAS FAIT DANS LE DOCKERFILE
+    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-pandas requests beautifulsoup4 elasticsearch==7.17.9 pyspark}
     # ----------------------------------------------------------------------------------------------------------------------
   volumes:
-    - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
+    - ../src/dags:/opt/airflow/dags
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
     - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
     # ----------------------------------------------------------------------------------------------------------------------
     ### AJOUT POUR PROJET FOOTBALL: Monter le code source et le Datalake
-    - ${AIRFLOW_PROJ_DIR:-.}/src:/opt/airflow/src
-    - ${AIRFLOW_PROJ_DIR:-.}/data:/opt/airflow/data
+    - ../src:/opt/airflow/src
+    - ../data:/opt/airflow/data
     # ----------------------------------------------------------------------------------------------------------------------
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
