@@ -209,6 +209,10 @@ __pycache__/
 *.pyc
 data/formatted/20251214/stats_formatted/
 data/formatted/20251214/values_formatted/
+data/formatted/20251215/stats_formatted/
+data/formatted/20251215/values_formatted/
 data/raw/api_football/players_stats/20251214/
+data/raw/api_football/players_stats/20251215/
 data/raw/transfermarkt/
 data/usage/20251214/
+data/usage/20251215/
