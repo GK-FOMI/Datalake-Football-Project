@@ -216,3 +216,19 @@ data/raw/api_football/players_stats/20251215/
 data/raw/transfermarkt/
 data/usage/20251214/
 data/usage/20251215/
+# Generated data (all dates)
+data/raw/
+data/formatted/
+data/usage/
+
+# Spark/Hadoop markers
+_SUCCESS
+*.crc
+
+# Logs
+logs/
+docker/logs/
+
+# macOS + editor backups
+.DS_Store
+*.save
