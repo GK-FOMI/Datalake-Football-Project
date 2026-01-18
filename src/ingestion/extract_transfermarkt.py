@@ -5,70 +5,54 @@ import os
 import sys
 from datetime import datetime, timedelta
 
-def extract_market_values(datalake_path):
-    """
-    Extrait la valeur marchande des joueurs par Scraping Web (Transfermarkt)
-    et stocke les données brutes dans la couche RAW du Datalake.
-    """
-    # --- Configuration ---
-    # URL de la page des valeurs marchandes (à ajuster si nécessaire)
-    URL = "https://www.transfermarkt.fr/ligue-1/startseite/wettbewerb/FR1/saison_id/2024" 
-    
-    # Headers simulant un navigateur pour éviter le blocage par le site
+def extract_market_values(datalake_path, date_str_raw):
+    URL = "https://www.transfermarkt.fr/ligue-1/marktwerte/wettbewerb/FR1?saison_id=2024"
     HEADERS = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+        "User-Agent": "Mozilla/5.0"
     }
 
-    yesterday = datetime.now() - timedelta(days=1)
-    date_str_raw = yesterday.strftime("%Y%m%d")
     raw_path = os.path.join(datalake_path, f"raw/transfermarkt/market_values/{date_str_raw}")
-    # --- Fin de Configuration ---
+    os.makedirs(raw_path, exist_ok=True)
+    filename = os.path.join(raw_path, "values_scraped.json")
 
-    try:
-        os.makedirs(raw_path, exist_ok=True)
-        filename = os.path.join(raw_path, f"values_scraped.json")
+    print(f"--- Début scraping Transfermarkt pour {date_str_raw} ---")
 
-        print(f"Début du scraping de {URL}")
+    r = requests.get(URL, headers=HEADERS)
+    r.raise_for_status()
 
-        # 1. Appel HTTP 
-        response = requests.get(URL, headers=HEADERS)
-        response.raise_for_status() 
-        
-        # 2. Parsing du HTML 
-        soup = BeautifulSoup(response.content, 'html.parser')
-        scraped_data = []
+    soup = BeautifulSoup(r.text, "html.parser")
+    table = soup.select_one("table.items")
+    rows = table.select("tbody tr")
 
-        # 3. Extraction : Trouver les lignes de joueurs (sélection à vérifier)
-        # Ceci est très sensible aux changements de site.
-        player_rows = soup.find_all('tr', class_=['odd', 'even']) 
-        
-        for row in player_rows:
-            # Sélecteurs basiques pour l'exemple
-            player_name_tag = row.find('td', class_='hauptlink').a if row.find('td', class_='hauptlink') else None
-            value_tag = row.find('td', class_='rechts') 
-            
-            if player_name_tag and value_tag:
-                scraped_data.append({
-                    "player_name": player_name_tag.text.strip(),
-                    "market_value_raw": value_tag.text.strip(),
-                    "scraped_url": URL
-                })
+    data = []
 
-        # 4. Sauvegarde du JSON brut
-        with open(filename, 'w', encoding='utf-8') as f:
-            json.dump(scraped_data, f, ensure_ascii=False, indent=4)
-        
-        print(f"Scraping réussi. {len(scraped_data)} joueurs extraits.")
+    for tr in rows:
+        name_td = tr.select_one("td.hauptlink a")
+        value_td = tr.select("td.rechts")
 
-    except requests.exceptions.RequestException as e:
-        print(f"Erreur HTTP/Connexion ou échec de l'appel : {e}")
-        sys.exit(1)
-    except Exception as e:
-        print(f"Erreur de parsing (HTML/Sélecteur incorrect) : {e}")
-        sys.exit(1)
+        if not name_td or not value_td:
+            continue
+
+        player_name = name_td.text.strip()
+        market_value_raw = value_td[-1].text.strip()
+
+        data.append({
+            "player_name": player_name,
+            "market_value_raw": market_value_raw,
+            "scraped_url": URL
+        })
+
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+
+    print(f"Scraping terminé : {len(data)} joueurs sauvegardés")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
+        print("Usage: extract_transfermarkt.py <datalake_path> [YYYYMMDD]")
         sys.exit(1)
-    datalake_root = sys.argv[1] 
-    extract_market_values(datalake_root)
+
+    datalake_path = sys.argv[1]
+    date_str_raw = sys.argv[2] if len(sys.argv) >= 3 else (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
+
+    extract_market_values(datalake_path, date_str_raw)

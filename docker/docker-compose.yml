@@ -6,7 +6,7 @@ x-airflow-common:
   build: .
   environment:
     &airflow-common-env
-    JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64 # On s'assure que Spark trouve Java
+    JAVA_HOME: /usr/lib/jvm/java-17-openjdk-arm64 # On s'assure que Spark trouve Java
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
@@ -99,8 +99,7 @@ services:
     ports:
       - "5601:5601"
     depends_on:
-      - elasticsearch :
-          condition: service_healthy
+      - elasticsearch 
     environment:
       ELASTICSEARCH_HOSTS: http://elasticsearch:9200
     restart: always
