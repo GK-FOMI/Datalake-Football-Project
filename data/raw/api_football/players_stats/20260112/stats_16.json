@@ -1,0 +1,2137 @@
+{
+    "get": "players",
+    "parameters": {
+        "league": "61",
+        "season": "2023"
+    },
+    "errors": [],
+    "results": 20,
+    "paging": {
+        "current": 1,
+        "total": 43
+    },
+    "response": [
+        {
+            "player": {
+                "id": 1912,
+                "name": "D. Payet",
+                "firstname": "Dimitri",
+                "lastname": "Payet",
+                "age": 38,
+                "birth": {
+                    "date": "1987-03-29",
+                    "place": "Saint-Pierre",
+                    "country": "Réunion"
+                },
+                "nationality": "France",
+                "height": "175",
+                "weight": "77",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/1912.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 81,
+                        "name": "Marseille",
+                        "logo": "https://media.api-sports.io/football/teams/81.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 1916,
+                "name": "K. Strootman",
+                "firstname": "Kevin Johannes",
+                "lastname": "Willem Strootman",
+                "age": 34,
+                "birth": {
+                    "date": "1990-02-13",
+                    "place": "Ridderkerk",
+                    "country": "Netherlands"
+                },
+                "nationality": "Netherlands",
+                "height": "186 cm",
+                "weight": "78 kg",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/1916.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 81,
+                        "name": "Marseille",
+                        "logo": "https://media.api-sports.io/football/teams/81.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 20669,
+                "name": "T. Ducrocq",
+                "firstname": "Tom",
+                "lastname": "Ducrocq",
+                "age": 26,
+                "birth": {
+                    "date": "1999-08-25",
+                    "place": "Blendecques",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "176",
+                "weight": "62",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/20669.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 116,
+                        "name": "Lens",
+                        "logo": "https://media.api-sports.io/football/teams/116.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 21079,
+                "name": "M. Dupé",
+                "firstname": "Maxime",
+                "lastname": "Dupé",
+                "age": 32,
+                "birth": {
+                    "date": "1993-03-04",
+                    "place": "Malestroit",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "188",
+                "weight": "88",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/21079.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 96,
+                        "name": "Toulouse",
+                        "logo": "https://media.api-sports.io/football/teams/96.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Goalkeeper",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 84,
+                        "name": "Nice",
+                        "logo": "https://media.api-sports.io/football/teams/84.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": 0,
+                        "lineups": 0,
+                        "minutes": 0,
+                        "number": null,
+                        "position": "Goalkeeper",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 15
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": 1
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 21613,
+                "name": "L. Joseph",
+                "firstname": "Lenny",
+                "lastname": "Joseph",
+                "age": 25,
+                "birth": {
+                    "date": "2000-10-12",
+                    "place": "Paris",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "183",
+                "weight": "73",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/21613.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 112,
+                        "name": "Metz",
+                        "logo": "https://media.api-sports.io/football/teams/112.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 22235,
+                "name": "J. Bamba",
+                "firstname": "Jonathan Fousseni",
+                "lastname": "Bamba",
+                "age": 29,
+                "birth": {
+                    "date": "1996-03-26",
+                    "place": "Alfortville",
+                    "country": "France"
+                },
+                "nationality": "Côte d'Ivoire",
+                "height": "175",
+                "weight": "72",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/22235.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 79,
+                        "name": "Lille",
+                        "logo": "https://media.api-sports.io/football/teams/79.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 26313,
+                "name": "A. Donis",
+                "firstname": "Anastasios",
+                "lastname": "Donis",
+                "age": 29,
+                "birth": {
+                    "date": "1996-08-29",
+                    "place": "Blackburn",
+                    "country": "England"
+                },
+                "nationality": "Greece",
+                "height": "178",
+                "weight": "76",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/26313.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 93,
+                        "name": "Reims",
+                        "logo": "https://media.api-sports.io/football/teams/93.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 30807,
+                "name": "S. Fofana",
+                "firstname": "Seko Mohamed",
+                "lastname": "Fofana",
+                "age": 30,
+                "birth": {
+                    "date": "1995-05-07",
+                    "place": "Paris",
+                    "country": "France"
+                },
+                "nationality": "Côte d'Ivoire",
+                "height": "183",
+                "weight": "74",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/30807.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 116,
+                        "name": "Lens",
+                        "logo": "https://media.api-sports.io/football/teams/116.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 31483,
+                "name": "A. Gravillon",
+                "firstname": "Andreaw Rayan Andy",
+                "lastname": "Gravillon",
+                "age": 27,
+                "birth": {
+                    "date": "1998-02-08",
+                    "place": "Pointe-à-Pitre",
+                    "country": "Guadeloupe"
+                },
+                "nationality": "Guadeloupe",
+                "height": "188 cm",
+                "weight": "75 kg",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/31483.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 93,
+                        "name": "Reims",
+                        "logo": "https://media.api-sports.io/football/teams/93.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 41748,
+                "name": "J. Onana",
+                "firstname": "Jean Emile Junior",
+                "lastname": "Onana Onana",
+                "age": 25,
+                "birth": {
+                    "date": "2000-01-08",
+                    "place": "Yaoundé",
+                    "country": "Cameroon"
+                },
+                "nationality": "Cameroon",
+                "height": "189",
+                "weight": "85",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/41748.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 116,
+                        "name": "Lens",
+                        "logo": "https://media.api-sports.io/football/teams/116.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 81,
+                        "name": "Marseille",
+                        "logo": "https://media.api-sports.io/football/teams/81.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": 13,
+                        "lineups": 5,
+                        "minutes": 561,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": "6.775000",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 8,
+                        "out": 3,
+                        "bench": 9
+                    },
+                    "shots": {
+                        "total": 8,
+                        "on": 3
+                    },
+                    "goals": {
+                        "total": 1,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 452,
+                        "key": 2,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 23,
+                        "blocks": 2,
+                        "interceptions": 11
+                    },
+                    "duels": {
+                        "total": 83,
+                        "won": 44
+                    },
+                    "dribbles": {
+                        "attempts": 5,
+                        "success": 2,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 8,
+                        "committed": 15
+                    },
+                    "cards": {
+                        "yellow": 1,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 162589,
+                "name": "R. Ascone",
+                "firstname": "Rocco Angelo",
+                "lastname": "Ascone",
+                "age": 22,
+                "birth": {
+                    "date": "2003-09-12",
+                    "place": null,
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "180",
+                "weight": "67",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/162589.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 79,
+                        "name": "Lille",
+                        "logo": "https://media.api-sports.io/football/teams/79.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 174783,
+                "name": "Y. Diaby",
+                "firstname": "Yadaly",
+                "lastname": "Diaby",
+                "age": 25,
+                "birth": {
+                    "date": "2000-08-09",
+                    "place": "Saint-Pierre",
+                    "country": "France"
+                },
+                "nationality": "Guinea",
+                "height": "184",
+                "weight": "76",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/174783.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 99,
+                        "name": "Clermont Foot",
+                        "logo": "https://media.api-sports.io/football/teams/99.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 174881,
+                "name": "M. Mbow",
+                "firstname": "Mamadou Moustapha",
+                "lastname": "Mbow",
+                "age": 25,
+                "birth": {
+                    "date": "2000-03-08",
+                    "place": "Guédiawaye",
+                    "country": "Senegal"
+                },
+                "nationality": "Senegal",
+                "height": "192",
+                "weight": "74",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/174881.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 93,
+                        "name": "Reims",
+                        "logo": "https://media.api-sports.io/football/teams/93.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 237198,
+                "name": "O. Ba",
+                "firstname": "Ousmane",
+                "lastname": "Ba",
+                "age": 23,
+                "birth": {
+                    "date": "2002-06-06",
+                    "place": "Rufisque",
+                    "country": "Senegal"
+                },
+                "nationality": "Senegal",
+                "height": "185",
+                "weight": "74",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/237198.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 112,
+                        "name": "Metz",
+                        "logo": "https://media.api-sports.io/football/teams/112.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Goalkeeper",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 268571,
+                "name": "E. Bitshiabu",
+                "firstname": "El Chadaille",
+                "lastname": "Bitshiabu",
+                "age": 20,
+                "birth": {
+                    "date": "2005-05-16",
+                    "place": "Villeneuve-Saint-Georges",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "196",
+                "weight": "95",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/268571.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 85,
+                        "name": "Paris Saint Germain",
+                        "logo": "https://media.api-sports.io/football/teams/85.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 275959,
+                "name": "B. Diallo",
+                "firstname": "Baïla",
+                "lastname": "Diallo",
+                "age": 24,
+                "birth": {
+                    "date": "2001-06-24",
+                    "place": "Toulouse",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "176 cm",
+                "weight": "70 kg",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/275959.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 99,
+                        "name": "Clermont Foot",
+                        "logo": "https://media.api-sports.io/football/teams/99.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 277085,
+                "name": "A. Do Marcolino",
+                "firstname": "Fabrice-Alan",
+                "lastname": "Do Marcolino Anguilet",
+                "age": 23,
+                "birth": {
+                    "date": "2002-03-19",
+                    "place": "Libreville",
+                    "country": "Gabon"
+                },
+                "nationality": "Gabon",
+                "height": "194",
+                "weight": null,
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/277085.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 94,
+                        "name": "Rennes",
+                        "logo": "https://media.api-sports.io/football/teams/94.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 293949,
+                "name": "J. N&apos;Guessan",
+                "firstname": "Jean Frederic Kouadio",
+                "lastname": "N'Guessan",
+                "age": 22,
+                "birth": {
+                    "date": "2003-04-17",
+                    "place": "Daloa",
+                    "country": "Côte d'Ivoire"
+                },
+                "nationality": "Côte d'Ivoire",
+                "height": "177",
+                "weight": "80",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/293949.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 84,
+                        "name": "Nice",
+                        "logo": "https://media.api-sports.io/football/teams/84.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 112,
+                        "name": "Metz",
+                        "logo": "https://media.api-sports.io/football/teams/112.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": 6,
+                        "lineups": 1,
+                        "minutes": 107,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": "6.466666",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 5,
+                        "out": 1,
+                        "bench": 13
+                    },
+                    "shots": {
+                        "total": 1,
+                        "on": 1
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 45,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 3,
+                        "blocks": null,
+                        "interceptions": 1
+                    },
+                    "duels": {
+                        "total": 26,
+                        "won": 12
+                    },
+                    "dribbles": {
+                        "attempts": 3,
+                        "success": 3,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 5,
+                        "committed": 10
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 306532,
+                "name": "S. Hamulić",
+                "firstname": "Saïd",
+                "lastname": "Hamulić",
+                "age": 25,
+                "birth": {
+                    "date": "2000-11-12",
+                    "place": "Leiderdorp",
+                    "country": "Netherlands"
+                },
+                "nationality": "Netherlands",
+                "height": "189 cm",
+                "weight": "83 kg",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/306532.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 96,
+                        "name": "Toulouse",
+                        "logo": "https://media.api-sports.io/football/teams/96.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 334964,
+                "name": "D. Moussadek",
+                "firstname": "Djamal",
+                "lastname": "Moussadek Medou Otye",
+                "age": 21,
+                "birth": {
+                    "date": "2002-04-03",
+                    "place": "Le Mans",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "185 cm",
+                "weight": "82 kg",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/334964.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 111,
+                        "name": "Le Havre",
+                        "logo": "https://media.api-sports.io/football/teams/111.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2023
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -2,6 +2,8 @@ apache-airflow
 pandas
 requests
 beautifulsoup4
-elasticsearch==7.17.10  # Important: doit correspondre à la version d'Elasticsearch/Kibana
-psycopg2-binary         # Pour la connexion à la base de données Postgres d'Airflow
+elasticsearch>=7.17,<8.0.0
+psycopg2-binary
 apache-airflow-providers-postgres
+pyspark==3.5.0
+pyarrow

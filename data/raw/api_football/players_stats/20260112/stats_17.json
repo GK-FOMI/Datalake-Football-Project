@@ -1,0 +1,2211 @@
+{
+    "get": "players",
+    "parameters": {
+        "league": "61",
+        "season": "2024"
+    },
+    "errors": [],
+    "results": 20,
+    "paging": {
+        "current": 1,
+        "total": 46
+    },
+    "response": [
+        {
+            "player": {
+                "id": 103,
+                "name": "J. Aholou",
+                "firstname": "Jean-Eudes Pascal Armand",
+                "lastname": "Aholou",
+                "age": 31,
+                "birth": {
+                    "date": "1994-03-20",
+                    "place": "Yopougnon",
+                    "country": "Côte d'Ivoire"
+                },
+                "nationality": "Côte d'Ivoire",
+                "height": "187",
+                "weight": "75",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/103.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 95,
+                        "name": "Strasbourg",
+                        "logo": "https://media.api-sports.io/football/teams/95.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 77,
+                        "name": "Angers",
+                        "logo": "https://media.api-sports.io/football/teams/77.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": 27,
+                        "lineups": 27,
+                        "minutes": 1978,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": "6.888461",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": 19,
+                        "on": 7
+                    },
+                    "goals": {
+                        "total": 2,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 760,
+                        "key": 10,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 56,
+                        "blocks": 14,
+                        "interceptions": 33
+                    },
+                    "duels": {
+                        "total": 256,
+                        "won": 131
+                    },
+                    "dribbles": {
+                        "attempts": 24,
+                        "success": 12,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 25,
+                        "committed": 50
+                    },
+                    "cards": {
+                        "yellow": 7,
+                        "yellowred": null,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 263,
+                "name": "L. Kurzawa",
+                "firstname": "Layvin Marc",
+                "lastname": "Kurzawa",
+                "age": 33,
+                "birth": {
+                    "date": "1992-09-04",
+                    "place": "Fréjus",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "182 cm",
+                "weight": "74 kg",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/263.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 85,
+                        "name": "Paris Saint Germain",
+                        "logo": "https://media.api-sports.io/football/teams/85.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 278,
+                "name": "Kylian Mbappé",
+                "firstname": "Kylian",
+                "lastname": "Mbappé Lottin",
+                "age": 27,
+                "birth": {
+                    "date": "1998-12-20",
+                    "place": "Paris",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "178",
+                "weight": "75",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/278.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 85,
+                        "name": "Paris Saint Germain",
+                        "logo": "https://media.api-sports.io/football/teams/85.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 731,
+                "name": "K. Navas",
+                "firstname": "Keylor Antonio",
+                "lastname": "Navas Gamboa",
+                "age": 39,
+                "birth": {
+                    "date": "1986-12-15",
+                    "place": "San Isidro",
+                    "country": "Costa Rica"
+                },
+                "nationality": "Costa Rica",
+                "height": "185",
+                "weight": "80",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/731.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 85,
+                        "name": "Paris Saint Germain",
+                        "logo": "https://media.api-sports.io/football/teams/85.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Goalkeeper",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 1278,
+                "name": "Y. Karamoh",
+                "firstname": "Yann Dorgelès Isaac",
+                "lastname": "Karamoh",
+                "age": 27,
+                "birth": {
+                    "date": "1998-07-08",
+                    "place": "Abidjan",
+                    "country": "Côte d'Ivoire"
+                },
+                "nationality": "France",
+                "height": "185",
+                "weight": "77",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/1278.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 82,
+                        "name": "Montpellier",
+                        "logo": "https://media.api-sports.io/football/teams/82.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 19250,
+                "name": "B. Brahimi",
+                "firstname": "Billal",
+                "lastname": "Brahimi",
+                "age": 25,
+                "birth": {
+                    "date": "2000-03-14",
+                    "place": "Paris",
+                    "country": "France"
+                },
+                "nationality": "Algeria",
+                "height": "183",
+                "weight": "75",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/19250.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 106,
+                        "name": "Stade Brestois 29",
+                        "logo": "https://media.api-sports.io/football/teams/106.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 84,
+                        "name": "Nice",
+                        "logo": "https://media.api-sports.io/football/teams/84.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "lineups": 1,
+                        "minutes": 76,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": "6.500000",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 1,
+                        "out": 1,
+                        "bench": 2
+                    },
+                    "shots": {
+                        "total": 1,
+                        "on": 1
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 32,
+                        "key": 1,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 8,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": 2,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": 3
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 20600,
+                "name": "R. Perraud",
+                "firstname": "Romain Paul Jean-Michel",
+                "lastname": "Perraud",
+                "age": 28,
+                "birth": {
+                    "date": "1997-09-22",
+                    "place": "Toulouse",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "173",
+                "weight": "68",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/20600.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 84,
+                        "name": "Nice",
+                        "logo": "https://media.api-sports.io/football/teams/84.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 20833,
+                "name": "L. Leroy",
+                "firstname": "Léo",
+                "lastname": "Leroy",
+                "age": 25,
+                "birth": {
+                    "date": "2000-02-14",
+                    "place": "Marseille",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "187",
+                "weight": "82",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/20833.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 82,
+                        "name": "Montpellier",
+                        "logo": "https://media.api-sports.io/football/teams/82.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 21701,
+                "name": "V. Rosier",
+                "firstname": "Valentin André Henri",
+                "lastname": "Rosier",
+                "age": 29,
+                "birth": {
+                    "date": "1996-08-19",
+                    "place": "Montauban",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "175",
+                "weight": "71",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/21701.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 84,
+                        "name": "Nice",
+                        "logo": "https://media.api-sports.io/football/teams/84.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 22260,
+                "name": "I. Sissoko",
+                "firstname": "Ibrahima",
+                "lastname": "Sissoko",
+                "age": 28,
+                "birth": {
+                    "date": "1997-10-27",
+                    "place": "Meaux",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "193",
+                "weight": "90",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/22260.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 95,
+                        "name": "Strasbourg",
+                        "logo": "https://media.api-sports.io/football/teams/95.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 24207,
+                "name": "S. Diarra",
+                "firstname": "Stéphane Imad",
+                "lastname": "Diarra",
+                "age": 27,
+                "birth": {
+                    "date": "1998-12-09",
+                    "place": "Abidjan",
+                    "country": "Côte d'Ivoire"
+                },
+                "nationality": "Côte d'Ivoire",
+                "height": "173",
+                "weight": "58",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/24207.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 1063,
+                        "name": "Saint Etienne",
+                        "logo": "https://media.api-sports.io/football/teams/1063.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 48475,
+                "name": "S. Hefti",
+                "firstname": "Silvan",
+                "lastname": "Hefti",
+                "age": 28,
+                "birth": {
+                    "date": "1997-10-25",
+                    "place": "Rorschach",
+                    "country": "Switzerland"
+                },
+                "nationality": "Switzerland",
+                "height": "182",
+                "weight": "76",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/48475.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 82,
+                        "name": "Montpellier",
+                        "logo": "https://media.api-sports.io/football/teams/82.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 84101,
+                "name": "D. Chambost",
+                "firstname": "Dylan",
+                "lastname": "Chambost",
+                "age": 28,
+                "birth": {
+                    "date": "1997-08-19",
+                    "place": "Annecy",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "177",
+                "weight": "70",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/84101.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 1063,
+                        "name": "Saint Etienne",
+                        "logo": "https://media.api-sports.io/football/teams/1063.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 129670,
+                "name": "N. Mbuku",
+                "firstname": "Nathanaël",
+                "lastname": "Mbuku",
+                "age": 23,
+                "birth": {
+                    "date": "2002-03-16",
+                    "place": "Villeneuve-Saint-Georges",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "170",
+                "weight": "65",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/129670.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 1063,
+                        "name": "Saint Etienne",
+                        "logo": "https://media.api-sports.io/football/teams/1063.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 174768,
+                "name": "A. Pierre",
+                "firstname": "Alexandre",
+                "lastname": "Pierre",
+                "age": 24,
+                "birth": {
+                    "date": "2001-02-25",
+                    "place": "Aubervilliers",
+                    "country": "France"
+                },
+                "nationality": "Haiti",
+                "height": "190",
+                "weight": "88",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/174768.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 95,
+                        "name": "Strasbourg",
+                        "logo": "https://media.api-sports.io/football/teams/95.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Goalkeeper",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 174797,
+                "name": "M. Rivera",
+                "firstname": "Maxence",
+                "lastname": "Rivera",
+                "age": 23,
+                "birth": {
+                    "date": "2002-05-30",
+                    "place": "Bourgoin-Jallieu",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "171",
+                "weight": "61",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/174797.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 1063,
+                        "name": "Saint Etienne",
+                        "logo": "https://media.api-sports.io/football/teams/1063.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 195512,
+                "name": "M. Satriano",
+                "firstname": "Martín Adrián",
+                "lastname": "Satriano Costa",
+                "age": 24,
+                "birth": {
+                    "date": "2001-02-20",
+                    "place": "Montevideo",
+                    "country": "Uruguay"
+                },
+                "nationality": "Uruguay",
+                "height": "187",
+                "weight": "75",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/195512.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 106,
+                        "name": "Stade Brestois 29",
+                        "logo": "https://media.api-sports.io/football/teams/106.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 116,
+                        "name": "Lens",
+                        "logo": "https://media.api-sports.io/football/teams/116.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": 7,
+                        "lineups": 3,
+                        "minutes": 96,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": "6.557142",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 4,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": 4,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 28,
+                        "key": 2,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 3,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 22,
+                        "won": 10
+                    },
+                    "dribbles": {
+                        "attempts": 2,
+                        "success": 1,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 1,
+                        "committed": 4
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": null,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 288055,
+                "name": "Ângelo",
+                "firstname": "Ângelo Gabriel",
+                "lastname": "Borges Damaceno",
+                "age": 21,
+                "birth": {
+                    "date": "2004-12-21",
+                    "place": null,
+                    "country": "Brazil"
+                },
+                "nationality": "Brazil",
+                "height": "180",
+                "weight": "78",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/288055.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 95,
+                        "name": "Strasbourg",
+                        "logo": "https://media.api-sports.io/football/teams/95.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 304161,
+                "name": "B. Traoré",
+                "firstname": "Bénie Adama",
+                "lastname": "Traoré",
+                "age": 23,
+                "birth": {
+                    "date": "2002-11-30",
+                    "place": "Ouragahio",
+                    "country": "Côte d'Ivoire"
+                },
+                "nationality": "Côte d'Ivoire",
+                "height": "172",
+                "weight": "68",
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/304161.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 83,
+                        "name": "Nantes",
+                        "logo": "https://media.api-sports.io/football/teams/83.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 361881,
+                "name": "Antonin Cartillier",
+                "firstname": "Antonin",
+                "lastname": "Cartillier",
+                "age": 21,
+                "birth": {
+                    "date": "2004-06-23",
+                    "place": null,
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "176",
+                "weight": null,
+                "injured": false,
+                "photo": "https://media.api-sports.io/football/players/361881.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 106,
+                        "name": "Stade Brestois 29",
+                        "logo": "https://media.api-sports.io/football/teams/106.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 91,
+                        "name": "Monaco",
+                        "logo": "https://media.api-sports.io/football/teams/91.png"
+                    },
+                    "league": {
+                        "id": 61,
+                        "name": "Ligue 1",
+                        "country": "France",
+                        "logo": "https://media.api-sports.io/football/leagues/61.png",
+                        "flag": "https://media.api-sports.io/flags/fr.svg",
+                        "season": 2024
+                    },
+                    "games": {
+                        "appearences": null,
+                        "lineups": null,
+                        "minutes": null,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": null,
+                        "out": null,
+                        "bench": null
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": null,
+                        "conceded": null,
+                        "assists": null,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": null,
+                        "yellowred": null,
+                        "red": null
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": null,
+                        "missed": null,
+                        "saved": null
+                    }
+                }
+            ]
+        }
+    ]
+}
