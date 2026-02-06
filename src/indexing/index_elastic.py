@@ -1,88 +1,94 @@
-import os
 import sys
-from elasticsearch import Elasticsearch
-from elasticsearch.helpers import bulk
+import os
+from elasticsearch import Elasticsearch, helpers
 from pyspark.sql import SparkSession
+from datetime import datetime
 
-def index_name_from_date(date_str_raw: str) -> str:
-    # YYYYMMDD -> YYYY.MM.DD (index par jour)
-    return f"football_value_index-{date_str_raw[0:4]}.{date_str_raw[4:6]}.{date_str_raw[6:8]}"
+def index_to_elasticsearch(datalake_path: str, es_url: str, date_str: str):
+    """
+    Indexe les données finales dans Elasticsearch
+    """
+    spark = SparkSession.builder \
+        .appName("FootballAnalytics_Index") \
+        .master("local[*]") \
+        .getOrCreate()
 
-def ensure_index(es: Elasticsearch, index_name: str):
-    # Crée l'index avec mapping si absent (important pour Kibana)
-    if es.indices.exists(index=index_name):
-        return
+    input_path = os.path.join(datalake_path, f"usage/{date_str}/football_analytics_final.parquet")
+    index_name = f"football_value_index-{date_str}"
 
-    body = {
-        "mappings": {
-            "properties": {
-                "event_time": {"type": "date", "format": "yyyy-MM-dd"},
-                "extraction_date": {"type": "keyword"},
-                "player_name_api": {"type": "keyword"},
-                "team_name": {"type": "keyword"},
-                "league_name": {"type": "keyword"},
-                "market_value_eur": {"type": "double"},
-                "value_index": {"type": "double"},
-                "fair_price_predicted": {"type": "double"},
-                "valuation_gap": {"type": "double"},
-            }
-        }
-    }
-    es.indices.create(index=index_name, body=body)
-
-def create_actions(df_spark, index_name: str):
-    # Pas de pandas : on itère sur les lignes Spark
-    for row in df_spark.toLocalIterator():
-        doc = row.asDict(recursive=True)
-        doc_id = f"{doc.get('player_name_api','unknown')}_{doc.get('extraction_date','unknown')}"
-        yield {"_index": index_name, "_id": doc_id, "_source": doc}
-
-def main():
-    if len(sys.argv) < 4:
-        print("Usage: index_elastic.py <datalake_path> <elastic_url> <YYYYMMDD>")
-        sys.exit(1)
-
-    datalake_path = sys.argv[1]
-    elastic_url = sys.argv[2]
-    date_str_raw = sys.argv[3]
-
-    input_dir = os.path.join(datalake_path, f"usage/{date_str_raw}/football_analytics_final.parquet")
-    index_name = index_name_from_date(date_str_raw)
-
-    print(f"--- Indexation depuis: {input_dir} ---")
-    print(f"--- Elasticsearch: {elastic_url} ---")
-    print(f"--- Index cible: {index_name} ---")
-
-    spark = SparkSession.builder.master("local[*]").appName("FootballAnalytics_Index").getOrCreate()
+    print(f"--- Indexation Elasticsearch pour {date_str} ---")
+    print(f"INPUT: {input_path}")
+    print(f"ES URL: {es_url}")
+    print(f"INDEX: {index_name}")
 
     try:
-        es = Elasticsearch(elastic_url)
+        # Charger les données
+        df = spark.read.parquet(input_path)
+        total_records = df.count()
+        print(f"Total records à indexer : {total_records}")
 
+        # Convertir en format ISO 8601 pour Elasticsearch
+        # Format : YYYYMMDD -> YYYY-MM-DD
+        formatted_date = f"{date_str[:4]}-{date_str[4:6]}-{date_str[6:]}"
+        
+        # Convertir en liste de dictionnaires
+        records = df.toPandas().to_dict('records')
+        
+        # Connexion Elasticsearch
+        es = Elasticsearch([es_url], request_timeout=60)
+        
         if not es.ping():
-            raise Exception("Connexion Elasticsearch échouée (ping false).")
+            raise Exception("Impossible de se connecter à Elasticsearch")
+        
+        print(f"✅ Connexion Elasticsearch établie")
 
-        ensure_index(es, index_name)
+        # Préparer les actions bulk
+        actions = []
+        for i, record in enumerate(records):
+            # Remplacer event_time par un format ISO
+            record['event_time'] = formatted_date
+            record['@timestamp'] = formatted_date
+            
+            action = {
+                "_index": index_name,
+                "_id": f"{record['player_id']}_{date_str}",
+                "_source": record
+            }
+            actions.append(action)
 
-        df_spark = spark.read.parquet(input_dir)
-        total = df_spark.count()
-        print(f"Données chargées : {total} lignes à indexer.")
+        # Indexation bulk
+        print(f"Indexation de {len(actions)} documents...")
+        success, failed = helpers.bulk(es, actions, raise_on_error=False, stats_only=False)
+        
+        print(f"✅ Indexation terminée")
+        print(f"   Succès : {success}")
+        print(f"   Échecs : {len(failed) if isinstance(failed, list) else 0}")
 
-        successes, errors = bulk(
-            es,
-            create_actions(df_spark, index_name),
-            raise_on_error=False,
-            request_timeout=120
-        )
+        # Vérifier l'index
+        count = es.count(index=index_name)
+        print(f"   Documents dans l'index : {count['count']}")
 
-        print(f"Indexation terminée. Succès: {successes}")
-        if errors:
-            print(f"Erreurs bulk (extrait): {str(errors)[:400]}")
+        # Créer un alias pour faciliter les requêtes
+        alias_name = "football_value_index"
+        if es.indices.exists_alias(name=alias_name):
+            print(f"Alias '{alias_name}' existe déjà")
+        else:
+            es.indices.put_alias(index=index_name, name=alias_name)
+            print(f"✅ Alias '{alias_name}' créé")
 
-    except Exception as e:
-        print(f"Erreur FATALE d'Indexation : {e}")
-        sys.exit(1)
-    finally:
         spark.stop()
 
+    except Exception as e:
+        print(f"❌ Erreur indexation Elasticsearch: {e}")
+        import traceback
+        traceback.print_exc()
+        spark.stop()
+        sys.exit(1)
+
+
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) < 4:
+        print("Usage: index_elastic.py <datalake_path> <es_url> <YYYYMMDD>")
+        sys.exit(1)
+
+    index_to_elasticsearch(sys.argv[1], sys.argv[2], sys.argv[3])

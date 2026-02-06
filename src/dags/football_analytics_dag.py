@@ -38,6 +38,10 @@ with DAG(
         bash_command=f"python {SCRIPTS_PATH}/indexing/index_elastic.py {DATA_LAKE_PATH} http://elasticsearch:9200 {{{{ ds_nodash }}}}",
     )
 
-    [extract_stats, extract_market_values] >> format_data
-    format_data >> combine_data
-    combine_data >> index_data
+    create_kibana_pattern = BashOperator(
+        task_id='6_create_kibana_index_pattern',
+        bash_command=f'python {SCRIPTS_PATH}/indexing/create_kibana_index_pattern.py http://kibana:5601',
+    )
+
+    # Dépendances du pipeline
+    [extract_stats, extract_market_values] >> format_data >> combine_data >> index_data >> create_kibana_pattern

@@ -3,8 +3,8 @@ import os
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import (
     col, lit, lower, trim, regexp_replace, split, 
-    when, concat_ws, substring, levenshtein, size,
-    broadcast, coalesce, row_number, desc
+    when, concat_ws, substring, levenshtein, expr,
+    broadcast, coalesce, first, struct, array, explode
 )
 from pyspark.sql.types import DoubleType
 from pyspark.sql.window import Window
@@ -27,6 +27,17 @@ def normalize_name(name_col):
     # Supprimer les espaces multiples
     normalized = regexp_replace(normalized, r"\s+", " ")
     return trim(normalized)
+
+
+def extract_last_name(name_col):
+    """Extrait le nom de famille (dernier mot)"""
+    words = split(name_col, " ")
+    return words.getItem(expr("size(words) - 1"))
+
+
+def extract_first_initial(name_col):
+    """Extrait la première lettre du prénom"""
+    return substring(name_col, 1, 1)
 
 
 def combine_and_calculate_value_index(datalake_path: str, date_str: str):
@@ -62,91 +73,65 @@ def combine_and_calculate_value_index(datalake_path: str, date_str: str):
         # ==============================
         df_stats_norm = df_stats.withColumn(
             "name_normalized", normalize_name(col("player_name_api"))
+        ).withColumn(
+            "last_name", extract_last_name(col("name_normalized"))
+        ).withColumn(
+            "first_initial", extract_first_initial(col("name_normalized"))
         )
-        
-        # Extraire le nom de famille (dernier mot)
-        df_stats_norm = df_stats_norm.withColumn(
-            "name_parts", split(col("name_normalized"), " ")
-        ).withColumn(
-            "last_name", col("name_parts").getItem(size(col("name_parts")) - 1)
-        ).withColumn(
-            "first_initial", substring(col("name_normalized"), 1, 1)
-        ).drop("name_parts")
 
         df_values_norm = df_values.withColumn(
             "name_normalized", normalize_name(col("player_name"))
+        ).withColumn(
+            "last_name", extract_last_name(col("name_normalized"))
+        ).withColumn(
+            "first_initial", extract_first_initial(col("name_normalized"))
         )
-        
-        # Extraire le nom de famille (dernier mot)
-        df_values_norm = df_values_norm.withColumn(
-            "name_parts", split(col("name_normalized"), " ")
-        ).withColumn(
-            "last_name", col("name_parts").getItem(size(col("name_parts")) - 1)
-        ).withColumn(
-            "first_initial", substring(col("name_normalized"), 1, 1)
-        ).drop("name_parts")
 
         # ==============================
         # 3) Stratégie de matching multi-niveaux
         # ==============================
         
         # Niveau 1 : Matching exact sur nom normalisé
-        print("\n=== Niveau 1 : Matching exact ===")
         df_match_exact = df_stats_norm.join(
-            broadcast(df_values_norm.select(
-                col("name_normalized").alias("v_name_normalized"),
-                col("market_value_eur"),
-                col("market_value_raw")
-            )),
-            df_stats_norm.name_normalized == col("v_name_normalized"),
+            broadcast(df_values_norm),
+            df_stats_norm.name_normalized == df_values_norm.name_normalized,
             "left"
-        ).drop("v_name_normalized") \
-         .withColumn("match_type", 
-                     when(col("market_value_eur").isNotNull(), lit("exact"))
-                     .otherwise(lit(None)))
-
-        matched_exact = df_match_exact.filter(col("match_type") == "exact")
-        unmatched_1 = df_match_exact.filter(col("match_type").isNull())
-        
-        print(f"  Matchés : {matched_exact.count()}")
-        print(f"  Non matchés : {unmatched_1.count()}")
+        ).withColumn("match_type", lit("exact"))
 
         # Niveau 2 : Matching sur nom de famille + première lettre
-        print("\n=== Niveau 2 : Nom de famille + initiale ===")
-        df_match_lastname = unmatched_1.drop("market_value_eur", "market_value_raw", "match_type") \
+        df_unmatched = df_match_exact.filter(col("market_value_eur").isNull())
+        df_matched_exact = df_match_exact.filter(col("market_value_eur").isNotNull())
+
+        df_match_lastname = df_unmatched.drop("market_value_eur", "market_value_raw", "scraped_url", "match_type") \
             .join(
                 broadcast(df_values_norm.select(
                     col("last_name").alias("v_last_name"),
                     col("first_initial").alias("v_first_initial"),
-                    col("name_normalized").alias("v_name_normalized"),
-                    col("market_value_eur"),
-                    col("market_value_raw")
+                    "market_value_eur",
+                    "market_value_raw",
+                    "scraped_url"
                 )),
-                (unmatched_1.last_name == col("v_last_name")) & 
-                (unmatched_1.first_initial == col("v_first_initial")),
+                (df_unmatched.last_name == col("v_last_name")) & 
+                (df_unmatched.first_initial == col("v_first_initial")),
                 "left"
-            ).drop("v_last_name", "v_first_initial", "v_name_normalized") \
-            .withColumn("match_type", 
-                        when(col("market_value_eur").isNotNull(), lit("lastname_initial"))
-                        .otherwise(lit(None)))
-
-        matched_lastname = df_match_lastname.filter(col("match_type") == "lastname_initial")
-        unmatched_2 = df_match_lastname.filter(col("match_type").isNull())
-        
-        print(f"  Matchés : {matched_lastname.count()}")
-        print(f"  Non matchés : {unmatched_2.count()}")
+            ).drop("v_last_name", "v_first_initial") \
+            .withColumn("match_type", lit("lastname_initial"))
 
         # Niveau 3 : Matching fuzzy (distance de Levenshtein)
-        print("\n=== Niveau 3 : Fuzzy matching (Levenshtein) ===")
-        df_fuzzy_candidates = unmatched_2.drop("market_value_eur", "market_value_raw", "match_type") \
+        df_unmatched_2 = df_match_lastname.filter(col("market_value_eur").isNull())
+        df_matched_lastname = df_match_lastname.filter(col("market_value_eur").isNotNull())
+
+        # Pour le fuzzy matching, on crée un cross join limité par nom de famille
+        df_fuzzy_candidates = df_unmatched_2.drop("market_value_eur", "market_value_raw", "scraped_url", "match_type") \
             .join(
                 broadcast(df_values_norm.select(
                     col("last_name").alias("v_last_name"),
                     col("name_normalized").alias("v_name_normalized"),
-                    col("market_value_eur"),
-                    col("market_value_raw")
+                    "market_value_eur",
+                    "market_value_raw",
+                    "scraped_url"
                 )),
-                unmatched_2.last_name == col("v_last_name"),
+                df_unmatched_2.last_name == col("v_last_name"),
                 "left"
             )
 
@@ -160,45 +145,31 @@ def combine_and_calculate_value_index(datalake_path: str, date_str: str):
         window_spec = Window.partitionBy("player_id").orderBy(col("levenshtein_distance").asc())
         
         df_fuzzy_best = df_fuzzy_scored.withColumn(
-            "rank", row_number().over(window_spec)
+            "rank", expr("row_number() over (partition by player_id order by levenshtein_distance)")
         ).filter(col("rank") == 1) \
          .filter(col("levenshtein_distance") <= 3) \
          .drop("v_last_name", "v_name_normalized", "levenshtein_distance", "rank") \
-         .withColumn("match_type", 
-                     when(col("market_value_eur").isNotNull(), lit("fuzzy"))
-                     .otherwise(lit(None)))
-
-        matched_fuzzy = df_fuzzy_best.filter(col("match_type") == "fuzzy")
-        unmatched_3 = df_fuzzy_best.filter(col("match_type").isNull())
-        
-        print(f"  Matchés : {matched_fuzzy.count()}")
-        print(f"  Non matchés : {unmatched_3.count()}")
+         .withColumn("match_type", lit("fuzzy"))
 
         # Niveau 4 : Pas de match trouvé
-        print("\n=== Niveau 4 : Aucun match ===")
-        df_no_match = unmatched_3.drop("market_value_eur", "market_value_raw", "match_type") \
+        df_unmatched_final = df_fuzzy_best.filter(col("market_value_eur").isNull()) \
             .withColumn("market_value_eur", lit(0.0)) \
-            .withColumn("market_value_raw", lit("0")) \
             .withColumn("match_type", lit("no_match"))
-        
-        print(f"  Non matchés : {df_no_match.count()}")
+
+        df_matched_fuzzy = df_fuzzy_best.filter(col("market_value_eur").isNotNull())
 
         # ==============================
         # 4) Combiner tous les résultats
         # ==============================
-        df_combined = matched_exact \
-            .unionByName(matched_lastname, allowMissingColumns=True) \
-            .unionByName(matched_fuzzy, allowMissingColumns=True) \
-            .unionByName(df_no_match, allowMissingColumns=True)
+        df_combined = df_matched_exact.unionByName(df_matched_lastname, allowMissingColumns=True) \
+                                      .unionByName(df_matched_fuzzy, allowMissingColumns=True) \
+                                      .unionByName(df_unmatched_final, allowMissingColumns=True)
 
         # ==============================
         # 5) Calculer le Value Index
         # ==============================
         # Normaliser la valeur marchande (0-100)
-        max_value_row = df_combined.agg({"market_value_eur": "max"}).collect()[0]
-        max_value = max_value_row[0] if max_value_row[0] is not None else 1.0
-        
-        print(f"\nValeur marchande maximale : {max_value:,.0f} €")
+        max_value = df_combined.agg({"market_value_eur": "max"}).collect()[0][0]
         
         df_final = df_combined.withColumn(
             "value_index",
@@ -225,7 +196,7 @@ def combine_and_calculate_value_index(datalake_path: str, date_str: str):
         # ==============================
         # 6) Statistiques de matching
         # ==============================
-        match_stats = df_output.groupBy("match_type").count().orderBy(desc("count")).collect()
+        match_stats = df_output.groupBy("match_type").count().collect()
         
         print("\n=== Statistiques de matching ===")
         for row in match_stats:
@@ -245,8 +216,8 @@ def combine_and_calculate_value_index(datalake_path: str, date_str: str):
         print(f"   Total joueurs : {df_output.count()}")
 
         # Afficher quelques exemples
-        print("\n=== Top 10 joueurs par Value Index ===")
-        df_output.select("player_name_api", "team_name", "market_value_eur", "value_index", "match_type") \
+        print("\n=== Exemples de matching ===")
+        df_output.select("player_name_api", "market_value_eur", "value_index", "match_type") \
                  .orderBy(col("value_index").desc()) \
                  .show(10, truncate=False)
 
