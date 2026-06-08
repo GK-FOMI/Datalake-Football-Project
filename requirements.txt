@@ -5,5 +5,5 @@ beautifulsoup4
 elasticsearch>=7.17,<8.0.0
 psycopg2-binary
 apache-airflow-providers-postgres
-pyspark==3.5.0
+pyspark==3.5.2
 pyarrow
